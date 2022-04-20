@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | [Chat App]</title>
+    <link rel="stylesheet" href="../chat-app/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body>
+    <div class="container grid place-center">
+      <div class="phone-container grid place-center">
+        <div class="phone">
+          <!-- Phone Header -->
+          <header class="header flex space-between align-center gap-1">
+            <div class="flex align-center gap-1 animate__animated animate__fadeInLeft">
+              <i class="fas fa-chevron-left  "></i>
+              <img
+                class="person-avatar"
+                src="../chat-app/images/avatar.jpg"
+                alt="avatar of a person"
+              />
+              <div class="flex flex-column">
+                <p class="name fw-700">Samuel Green</p>
+                <p class="description">Available to Walk</p>
+              </div>
+            </div>
+            <i class="fas fa-ellipsis-v animate__animated animate__fadeInRight"></i>
+          </header>
+
+          <div class="grid-container grid gap-2">
+
+            <div class=" animate__animated animate__fadeInLeft chatbox-group-1 grid gap-1">
+              <div class="chatbox">
+                <p>That sounds great. I'd be happy to discuss more.</p>
+              </div>
+
+              <div class="chatbox">
+                <p>Could you send over some pictures of your dog, please?</p>
+              </div>
+            </div>
+
+            <div class="chatbox-group-2 animate__animated animate__fadeInRight grid gap-1">
+              <div class="chatbox-images flex gap-1">
+                <img
+                  src="../chat-app/images/dog-image-1.jpg"
+                  alt="image of a dog"
+                />
+                <img
+                  src="../chat-app/images/dog-image-2.jpg"
+                  alt="image of a dog"
+                />
+                <img
+                  src="../chat-app/images/dog-image-3.jpg"
+                  alt="image of a dog"
+                />
+              </div>
+
+              <div class="chatbox">
+                <p>Here are a few pictures. She's a happy girl!</p>
+              </div>
+
+              <div class="chatbox">
+                <p>Can you make it?</p>
+              </div>
+            </div>
+
+            <div class="chatbox-group-3 animate__animated animate__fadeInUp grid gap-1">
+              <div class="chatbox">
+                <p>
+                  She looks so happy! The time we discussed works. How long
+                  shall I take her out for?
+                </p>
+              </div>
+
+              <div class="walk-prices grid gap-1">
+                <div class="walk-price flex gap-1 space-between">
+                  <div class="radio flex gap-05">
+                    <input id="radio-1" type="radio" name="radio" checked />
+                    <label for="radio-1" class="radio-label flex align-center"
+                      >30 minute walk
+                    </label>
+                  </div>
+
+                  <p class="price fw-700">$29</p>
+                </div>
+
+                <div class="walk-price flex gap-1 space-between">
+                  <div class="radio flex gap-05">
+                    <input id="radio-2" type="radio" />
+                    <label
+                      for="radio-2"
+                      name="radio"
+                      class="radio-label flex align-center"
+                    >
+                      1 hour walk
+                    </label>
+                  </div>
+
+                  <p class="price fw-700">$49</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="type-message animate__animated animate__fadeInUp">
+              <label for="message" class="flex align-center">
+                <input
+                  id="message"
+                  type="text"
+                  placeholder="Type a message..."
+                />
+                <i class="fas send-message-icon fa-chevron-circle-right"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="simple-booking animate__animated animate__fadeInRight grid gap-2">
+        <h1 class="title">Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

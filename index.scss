@@ -1,0 +1,268 @@
+@import 'reset';
+@import 'utilities';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+
+html {
+    font-size: 1rem;
+}
+
+// Global Styles
+
+body {
+    background:hsl(270, 20%, 96%);
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+body:before {
+    content:'';
+    width:200px;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom-right-radius: 20rem;
+    border-bottom-left-radius: 20rem;
+    background:linear-gradient(45deg, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+}
+
+p {
+    line-height: 1.5;
+}
+
+.container {
+    position: relative;
+    padding-block:7rem;
+    max-width: 1100px;
+    margin-inline:auto;
+    padding-block:10rem;
+    
+}
+
+
+
+.phone-container {
+    background:#fff;
+    border-radius:2rem;
+    padding:1rem;
+    max-width: 370px;
+    
+
+    .phone {
+        position: relative;
+        width: 340px;
+        background:hsl(270, 20%, 96%);
+        border-radius:2rem;
+        
+    }
+}
+
+// Phone Header
+.header {
+    position: relative;
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-inline:1.3rem;
+    background:linear-gradient(45deg, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    
+
+    .fa-chevron-left {
+        font-size: 1.1rem;
+
+        &:hover {
+            cursor:pointer;
+      transform:translateX(-5px);
+      transition: 0.3s ease-in-out;
+      
+        }
+    }
+
+    .person-avatar {
+        width: 40px;
+        border-radius:100%;
+        border:1px solid #fff;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .name, .fas {
+       color:#fff;
+    }
+
+    .description {
+        color:rgb(0, 255, 21);
+        
+    }
+
+    .fa-ellipsis-v {
+        cursor:pointer;
+    }
+}
+
+.header:before {
+    content:'';
+    position: absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%);
+    width: 200px;
+    height: 25px;
+    background:#fff;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+
+.grid-container {
+    padding:1rem;
+
+    .chatbox {
+        max-width: 240px;
+        padding:.7rem;
+        background: 
+        rgb(240, 238, 238);
+        color:  hsl(271, 36%, 24%);
+        border-radius:10px;
+        }
+
+    
+    .chatbox-group-1 {
+        margin-top: 1rem;
+    }
+
+
+     .chatbox-group-2 {
+        justify-items: end;
+
+        .chatbox {
+            background:hsl(270, 9%, 100%);
+            color:#000;
+        }
+    
+        .chatbox-images {
+            justify-content: end;
+
+            img {
+                width: 70px;
+                border-radius:10px;
+                cursor:pointer;
+            }
+        }
+    }
+
+    .chatbox-group-3 {
+   
+   .walk-price {
+       background:linear-gradient(45deg, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+       padding-block:1rem;
+       padding-inline:1rem;
+       border-radius:10px;
+       width: 90%;
+       color:rgb(255, 255, 255);
+       font-size: 1.1rem;
+   }
+
+   label {
+       cursor:pointer;
+       
+   }
+
+
+   .radio {
+
+    input[type="radio"] {
+        position: absolute;
+        opacity:0;
+
+        + .radio-label {
+            &:before {
+                content:'';
+                border-radius:100%;
+                border: 2px solid hsl(289, 100%, 72%);
+                display: inline-block;
+                width: 1.4em;
+                height: 1.4em;
+                position: relative;
+                margin-right: 1em; 
+                transition: all 250ms ease;
+            }
+        }
+
+        &:focus {
+            + .radio-label {
+                &:before {
+                    background: hsl(264, 100%, 61%);
+                }
+            }
+        }
+    }
+   }
+    }
+
+    .type-message {
+       label {
+        position: relative;
+
+           input {
+            border-radius:100px;
+            width: 100%;
+            padding:1rem;
+            outline:none;
+            border:1px solid transparent;
+
+            &:focus {
+                border:1px solid hsl(272, 22%, 73%);
+            }
+        }
+       }
+        
+        .send-message-icon  {
+            position: absolute;
+            right: 10px;
+            font-size: 2rem;
+            cursor:pointer;
+            color:hsl(271, 36%, 24%);
+        }
+
+    }
+}
+
+.simple-booking {
+    margin-top: 3rem;
+    max-width: 50ch;
+    text-align: center;
+  padding:1.5rem;
+  color:hsl(270, 7%, 40%);
+
+  .title {
+      color:hsl(271, 36%, 24%);
+      font-size: 3rem;
+  }
+}
+
+
+// Media Queries 
+@media (min-width:900px) {
+    body:before {
+        width:400px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2,1fr);
+
+        .simple-booking {
+            text-align: left;
+        }
+    }
+}
+
+
+
+
+

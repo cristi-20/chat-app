@@ -1,0 +1,49 @@
+// Utility classes
+.fw-700{
+    font-weight: 700;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+}
+
+.place-center {
+    place-items: center;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.gap-05 {
+    gap:.5rem;
+}
+
+.gap-1 {
+    gap:1rem;
+}
+
+.gap-2 {
+    gap:2rem;
+}
+
+.gap-3 {
+    gap:3rem;
+}

@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: none;
+}
+
+a:visited {
+  color: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  border: none;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.place-center {
+  place-items: center;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gap-05 {
+  gap: .5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  background: #f5f3f7;
+  font-family: 'Rubik', sans-serif;
+}
+
+body:before {
+  content: '';
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 20rem;
+  border-bottom-left-radius: 20rem;
+  background: linear-gradient(45deg, #e942ff, #8838ff);
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  position: relative;
+  padding-block: 7rem;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-block: 10rem;
+}
+
+.phone-container {
+  background: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+  max-width: 370px;
+}
+
+.phone-container .phone {
+  position: relative;
+  width: 340px;
+  background: #f5f3f7;
+  border-radius: 2rem;
+}
+
+.header {
+  position: relative;
+  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  padding-inline: 1.3rem;
+  background: linear-gradient(45deg, #e942ff, #8838ff);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.header .fa-chevron-left {
+  font-size: 1.1rem;
+}
+
+.header .fa-chevron-left:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.header .person-avatar {
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+}
+
+.header .name {
+  font-size: 1.2rem;
+}
+
+.header .name, .header .fas {
+  color: #fff;
+}
+
+.header .description {
+  color: #00ff15;
+}
+
+.header .fa-ellipsis-v {
+  cursor: pointer;
+}
+
+.header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 200px;
+  height: 25px;
+  background: #fff;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.grid-container {
+  padding: 1rem;
+}
+
+.grid-container .chatbox {
+  max-width: 240px;
+  padding: .7rem;
+  background: #f0eeee;
+  color: #3e2753;
+  border-radius: 10px;
+}
+
+.grid-container .chatbox-group-1 {
+  margin-top: 1rem;
+}
+
+.grid-container .chatbox-group-2 {
+  justify-items: end;
+}
+
+.grid-container .chatbox-group-2 .chatbox {
+  background: white;
+  color: #000;
+}
+
+.grid-container .chatbox-group-2 .chatbox-images {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.grid-container .chatbox-group-2 .chatbox-images img {
+  width: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.grid-container .chatbox-group-3 .walk-price {
+  background: linear-gradient(45deg, #e942ff, #8838ff);
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  border-radius: 10px;
+  width: 90%;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.grid-container .chatbox-group-3 label {
+  cursor: pointer;
+}
+
+.grid-container .chatbox-group-3 .radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.grid-container .chatbox-group-3 .radio input[type="radio"] + .radio-label:before {
+  content: '';
+  border-radius: 100%;
+  border: 2px solid #e570ff;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  margin-right: 1em;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.grid-container .chatbox-group-3 .radio input[type="radio"]:focus + .radio-label:before {
+  background: #8838ff;
+}
+
+.grid-container .type-message label {
+  position: relative;
+}
+
+.grid-container .type-message label input {
+  border-radius: 100px;
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.grid-container .type-message label input:focus {
+  border: 1px solid #bbabc9;
+}
+
+.grid-container .type-message .send-message-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #3e2753;
+}
+
+.simple-booking {
+  margin-top: 3rem;
+  max-width: 50ch;
+  text-align: center;
+  padding: 1.5rem;
+  color: #665f6d;
+}
+
+.simple-booking .title {
+  color: #3e2753;
+  font-size: 3rem;
+}
+
+@media (min-width: 900px) {
+  body:before {
+    width: 400px;
+  }
+  .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .container .simple-booking {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=index.css.map */
